@@ -12,7 +12,7 @@ A command-line tool (CLI) to migrate your Spotify playlists to standard YouTube 
 
 ## Prerequisites
 
-1.  **Node.js:** Version 18 or higher recommended. Download from [nodejs.org](https://nodejs.org/).
+1.  **Node.js:** Version 18 or higher recommended.
 2.  **Spotify Developer Account & App:**
     *   Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
     *   Create an app to get your **Client ID** and **Client Secret**.
@@ -60,36 +60,36 @@ Tokens will be saved for future use.
 
 *   **Interactive Selection:** (Default action if no flags are given)
     ```bash
-    spotify-youtube-playlist-porter transfer 
+    npx spotify-youtube-playlist-porter@latest transfer
     ```
     This will list your Spotify playlists, allowing you to choose which ones to transfer using checkboxes.
 
 *   **Transfer All Playlists:**
     ```bash
-    spotify-youtube-playlist-porter transfer --all
+    npx spotify-youtube-playlist-porter@latest transfer --all
     ```
 
 *   **Transfer Specific Playlists by ID:**
     (Find the Spotify Playlist ID from its URL: `open.spotify.com/playlist/<ID>`)
     ```bash
-    spotify-youtube-playlist-porter --playlist <spotify_playlist_id_1> <spotify_playlist_id_2>
+    npx spotify-youtube-playlist-porter@latest --playlist <spotify_playlist_id_1> <spotify_playlist_id_2>
     ```
 
 **3. Other Commands:**
 
 *   **Re-run Configuration:**
     ```bash
-    spotify-youtube-playlist-porter configure
+    npx spotify-youtube-playlist-porter@latest configure
     ```
 
 *   **Clear Authentication Tokens:** (Forces re-authentication on next run)
     ```bash
-    spotify-youtube-playlist-porter reset-auth
+    npx spotify-youtube-playlist-porter@latest reset-auth
     ```
 
 *   **Clear ALL Configuration & Tokens:** (Requires running `configure` again)
     ```bash
-    spotify-youtube-playlist-porter reset-all
+    npx spotify-youtube-playlist-porter@latest reset-all
     ```
 
 ## Development Setup
