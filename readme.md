@@ -72,7 +72,7 @@ Tokens will be saved for future use.
 *   **Transfer Specific Playlists by ID:**
     (Find the Spotify Playlist ID from its URL: `open.spotify.com/playlist/<ID>`)
     ```bash
-    npx spotify-youtube-playlist-porter@latest --playlist <spotify_playlist_id_1> <spotify_playlist_id_2>
+    npx spotify-youtube-playlist-porter@latest transfer --playlist <spotify_playlist_id_1> <spotify_playlist_id_2>
     ```
 
 **3. Other Commands:**
@@ -121,10 +121,10 @@ Tokens will be saved for future use.
     npm run dev
 
     # Run transfer command for all playlists
-    npm run dev -- --all
+    npm run dev -- transfer --all
 
     # Run transfer command for specific playlist
-    npm run dev -- --playlist <your_playlist_id>
+    npm run dev -- transfer --playlist <your_playlist_id>
     ```
 
 5.  **Debugging (VS Code):**
